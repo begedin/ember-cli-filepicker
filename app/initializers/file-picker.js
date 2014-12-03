@@ -1,13 +1,6 @@
 /* global filepicker */
 import injectScript from 'ember-inject-script';
-// import config from 'your-app/config/environment';
 import config from '../config/environment';
-
-export default {
-  name: 'typekit',
-  initialize: function() {
-  }
-};
 
 export function initialize(container, application) {
   var url = "//api.filepicker.io/v1/filepicker.js";

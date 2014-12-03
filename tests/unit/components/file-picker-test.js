@@ -1,12 +1,16 @@
-import {
-  moduleForComponent,
-  test
-} from 'ember-qunit';
+import Ember from 'ember';
+import { moduleForComponent, test } from 'ember-qunit';
 
-moduleForComponent('file-picker', 'FilePickerComponent', {
-  // specify the other units that are required for this test
-  // needs: ['component:foo', 'helper:bar']
+moduleForComponent('file-picker', 'FilePickerComponent with mock filepicker api', {
+  setup: function() {
+    var api = {
+      constructWidget: function(element) {}
+    }
+    var filepicker = new Ember.RSVP.Promise(function(resolve) { resolve(api); });
+    this.subject({ filepicker: filepicker });
+  }
 });
+
 
 test('it renders', function() {
   expect(2);
@@ -23,4 +27,9 @@ test('it renders', function() {
 
 test('it sets input type to filepicker', function() {
   equal(this.$().find('input').attr('type'), 'filepicker');
+});
+
+test('it passes input element to constructWidget', function() {
+  // TODO: Verify this somehow
+  ok(true);
 });
