@@ -25,6 +25,10 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.contentSecurityPolicy = {
+      'script-src': "'self' 'unsafe-eval' api.filepicker.io",
+      'frame-src': "'self' www.filepicker.io dialog.filepicker.io",
+    }
   }
 
   if (environment === 'test') {
