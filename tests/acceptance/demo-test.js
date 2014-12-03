@@ -18,4 +18,10 @@ test('file-picker component demo', function() {
   andThen(function() {
     expectComponent('file-picker');
   });
+
+  // TODO: Figure out how to wait for filepicker api to have loaded
+  // before trying to click on the button...
+  // debugger;
+  // clickComponent('file-picker', 'button');
+
 });
