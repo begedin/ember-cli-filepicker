@@ -10,11 +10,11 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "https://github.com/stefanpenner/ember-cli",
+  "repository": "https://github.com/mikegrassotti/ember-cli-filepicker",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Mike Grassotti",
   "license": "MIT",
   "devDependencies": {
     "body-parser": "^1.2.0",
@@ -28,6 +28,7 @@
     "ember-cli-qunit": "0.1.0",
     "ember-data": "1.0.0-beta.10",
     "ember-export-application-global": "^1.0.0",
+    "ember-inject-script": "0.0.1",
     "express": "^4.8.5",
     "glob": "^4.0.5"
   },

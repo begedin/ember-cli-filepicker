@@ -43,5 +43,7 @@ module.exports = function(environment) {
 
   }
 
+  ENV.FILEPICKER_API_KEY = "AQKHf6dLTB2euE37ns6tuz";
+
   return ENV;
 };
