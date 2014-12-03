@@ -1,25 +1,8 @@
 # Ember-cli-filepicker
 
-This README outlines the details of collaborating on this Ember addon.
+Initial draft of an ember component that wraps filepicker.io
 
-## Installation
+## TODO
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
-
-## Running
-
-* `ember server`
-* Visit your app at http://localhost:4200.
-
-## Running Tests
-
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+* write some docs
+* make it work
