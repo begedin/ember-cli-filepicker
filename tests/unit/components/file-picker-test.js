@@ -5,7 +5,7 @@ moduleForComponent('file-picker', 'FilePickerComponent with mock filepicker api'
   setup: function() {
     var api = {
       constructWidget: function(element) {}
-    }
+    };
     var filepicker = new Ember.RSVP.Promise(function(resolve) { resolve(api); });
     this.subject({ filepicker: filepicker });
   }
