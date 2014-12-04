@@ -1,1 +1,7 @@
-<input />
+{{input}}
+
+{{#each fpfile in fpfiles}}
+  <div class="fpfile">
+    <pre>FILE: {{fpfile}}</pre>
+  </div>
+{{/each}}
